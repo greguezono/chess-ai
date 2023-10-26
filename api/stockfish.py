@@ -10,3 +10,6 @@ endpoint = url + 'fen=' + fen + '&depth=' + depth + '&mode=' + mode
 
 response = requests.get(endpoint)
 print(response.text)
+
+def getBestMove():
+    print('hi')
