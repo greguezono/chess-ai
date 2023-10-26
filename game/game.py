@@ -1,7 +1,11 @@
 import chess
+import random
 
 board = chess.Board()
 
-board.legal_moves
-print(board.legal_moves)
+moves = list(board.legal_moves)
+print(moves)
+move = random.choice(moves)
+print(move)
+board.push(move)
 print(board)
